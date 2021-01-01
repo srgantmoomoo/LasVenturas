@@ -1,0 +1,20 @@
+package me.srgantmoomoo.lasventuras.client;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import me.srgantmoomoo.lasventuras.client.setting.SettingManager;
+
+public class LasVenturas {
+		public static String NAME = "LasVenturas", VERSION = "1";
+		public static SettingManager settingManager;
+		
+		public static final Logger log = LogManager.getLogger("postman");
+		
+		public static void init() {
+			settingManager = new SettingManager();
+			log.info("settings system initialized.");
+
+	}
+
+}

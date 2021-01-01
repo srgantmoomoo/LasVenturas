@@ -1,0 +1,5 @@
+package me.srgantmoomoo.external.com.lukflug.panelstudio.settings;
+
+public class Toggleable {
+
+}

@@ -14,7 +14,7 @@ import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 
-import me.srgantmoomoo.lasventuras.LasVenturas;
+import me.srgantmoomoo.lasventuras.client.LasVenturas;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
