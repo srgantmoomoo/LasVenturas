@@ -33,7 +33,7 @@ public abstract class Module {
 		this.toggled = false;
 	}
 	
-	public void onWorldRender(RenderEvent event) {}
+	//public void onWorldRender(RenderEvent event) {}
 	
 	public void onUpdate(){}
 	

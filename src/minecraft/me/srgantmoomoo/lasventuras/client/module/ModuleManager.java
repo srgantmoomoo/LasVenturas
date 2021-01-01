@@ -35,7 +35,7 @@ public class ModuleManager {
 		modules.stream().filter(Module::isToggled).forEach(Module::onRender);
 	}
 	
-	public static void onWorldRender(RenderWorldLastEvent event) {
+	/*public static void onWorldRender(RenderWorldLastEvent event) {
 		Minecraft.getMinecraft().profiler.startSection("lasventuras");
 		Minecraft.getMinecraft().profiler.startSection("setup");
 		JTessellator.prepare();
@@ -52,7 +52,7 @@ public class ModuleManager {
 		JTessellator.release();
 		Minecraft.getMinecraft().profiler.endSection();
 		Minecraft.getMinecraft().profiler.endSection();
-	}
+	}*/
 	
 	public static boolean isModuleEnabled(String name){
 		Module m = modules.stream().filter(mm->mm.getName().equalsIgnoreCase(name)).findFirst().orElse(null);

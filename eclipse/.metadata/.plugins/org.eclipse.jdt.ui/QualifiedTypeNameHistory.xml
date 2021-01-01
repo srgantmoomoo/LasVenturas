@@ -2,4 +2,30 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
 <fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.LasVenturas"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.settings.KeybindSetting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.Setting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.settings.BooleanSetting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.settings.NumberSetting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.settings.ModeSetting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.settings.ColorSetting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.setting.SettingManager"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="java.util.logging.LogManager"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.module.ModuleManager"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="it.unimi.dsi.fastutil.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.api.config.SaveLoad"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.module.Module"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.external.com.lukflug.panelstudio.settings.EnumSetting"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.external.com.lukflug.panelstudio.theme.Renderer"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.external.com.lukflug.panelstudio.settings.Toggleable"/>
+<fullyQualifiedTypeName name="io.netty.channel.Channel.Unsafe"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.external.me.zero.alpine.type.Cancellable"/>
+<fullyQualifiedTypeName name="me.srgantmoomoo.lasventuras.client.LasVenturas"/>
+<fullyQualifiedTypeName name="com.google.common.eventbus.Subscribe"/>
 </qualifiedTypeNameHistroy>

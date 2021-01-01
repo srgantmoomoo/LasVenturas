@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2021-01-01 03:08:39 -0500",
+      "desert": "2021-01-01 03:09:11 -0500"
+    },
+    "done": false
+  }
+}
