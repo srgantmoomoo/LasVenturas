@@ -2,8 +2,11 @@ package me.srgantmoomoo.lasventuras.client.ui;
 
 import java.awt.Color;
 
+import com.mojang.realmsclient.gui.ChatFormatting;
+
 import me.srgantmoomoo.lasventuras.client.LasVenturas;
 import me.srgantmoomoo.lasventuras.client.ui.name.Name;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiLanguage;
@@ -30,6 +33,9 @@ public class MainMenuScreen extends GuiScreen {
 		ScaledResolution sr = new ScaledResolution(mc);
 		mc.getTextureManager().bindTexture(new ResourceLocation("LasVenturas/Background.jpg"));
 		this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0, this.width, this.height, this.width, this.height);
+		
+		mc.fontRendererObj.drawStringWithShadow(ChatFormatting.WHITE + "Private client by" + ChatFormatting.LIGHT_PURPLE + " SrgantMooMoo.",  sr.getScaledWidth() - mc.fontRendererObj.getStringWidth("Private client by SrgantMooMoo."), 0, 0xffffffff);
+		mc.fontRendererObj.drawStringWithShadow(ChatFormatting.GRAY + "Credits on github.", sr.getScaledWidth() - mc.fontRendererObj.getStringWidth("Credits on github."), 10, 0xffffffff);
 		
 		String[] buttons = { "singleplayer", "multiplayer", "settings", "language settings", "leave game" };
 		
