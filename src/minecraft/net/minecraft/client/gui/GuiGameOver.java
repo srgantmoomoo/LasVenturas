@@ -2,6 +2,8 @@ package net.minecraft.client.gui;
 
 import java.io.IOException;
 import javax.annotation.Nullable;
+
+import me.srgantmoomoo.lasventuras.client.ui.MainMenuScreen;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
@@ -75,7 +77,7 @@ public class GuiGameOver extends GuiScreen
             case 1:
                 if (this.mc.world.getWorldInfo().isHardcoreModeEnabled())
                 {
-                    this.mc.displayGuiScreen(new GuiMainMenu());
+                    this.mc.displayGuiScreen(new MainMenuScreen());
                 }
                 else
                 {
@@ -96,7 +98,7 @@ public class GuiGameOver extends GuiScreen
             }
 
             this.mc.loadWorld((WorldClient)null);
-            this.mc.displayGuiScreen(new GuiMainMenu());
+            this.mc.displayGuiScreen(new MainMenuScreen());
         }
         else
         {

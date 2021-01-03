@@ -15,6 +15,7 @@ import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 
 import me.srgantmoomoo.lasventuras.client.LasVenturas;
+import me.srgantmoomoo.lasventuras.client.ui.MainMenuScreen;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -238,7 +239,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
     private ServerData currentServerData;
 
     /** The RenderEngine instance used by Minecraft */
-    private TextureManager renderEngine;
+    public TextureManager renderEngine;
 
     /**
      * Set to 'this' in Minecraft constructor; used by some settings get methods
@@ -610,11 +611,11 @@ public class Minecraft implements IThreadListener, ISnooperInfo
 
         if (this.serverName != null)
         {
-            this.displayGuiScreen(new GuiConnecting(new GuiMainMenu(), this, this.serverName, this.serverPort));
+            this.displayGuiScreen(new GuiConnecting(new MainMenuScreen(), this, this.serverName, this.serverPort));
         }
         else
         {
-            this.displayGuiScreen(new GuiMainMenu());
+            this.displayGuiScreen(new MainMenuScreen());
         }
 
         this.renderEngine.deleteTexture(this.mojangLogo);
@@ -1056,14 +1057,14 @@ public class Minecraft implements IThreadListener, ISnooperInfo
 
         if (guiScreenIn == null && this.world == null)
         {
-            guiScreenIn = new GuiMainMenu();
+            guiScreenIn = new MainMenuScreen();
         }
         else if (guiScreenIn == null && this.player.getHealth() <= 0.0F)
         {
             guiScreenIn = new GuiGameOver((ITextComponent)null);
         }
 
-        if (guiScreenIn instanceof GuiMainMenu || guiScreenIn instanceof GuiMultiplayer)
+        if (guiScreenIn instanceof MainMenuScreen || guiScreenIn instanceof GuiMultiplayer)
         {
             this.gameSettings.showDebugInfo = false;
             this.ingameGUI.getChatGUI().clearChatMessages(true);
