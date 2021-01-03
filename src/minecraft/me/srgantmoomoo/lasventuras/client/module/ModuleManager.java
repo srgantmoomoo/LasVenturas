@@ -3,6 +3,9 @@ package me.srgantmoomoo.lasventuras.client.module;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import me.srgantmoomoo.lasventuras.api.event.customevent.Event;
+import me.srgantmoomoo.lasventuras.api.event.customevent.listeners.EventKey;
 import net.minecraft.client.Minecraft;
 
 public class ModuleManager {
@@ -53,6 +56,25 @@ public class ModuleManager {
 		Minecraft.getMinecraft().profiler.endSection();
 		Minecraft.getMinecraft().profiler.endSection();
 	}*/
+	
+	public static void onEvent(Event e) {
+		for(Module m : modules){
+			if(!m.toggled)
+				continue;
+			
+			m.onEvent(e);;
+		}
+	}
+	
+	public static void keyPress(int key) {
+		onEvent(new EventKey(key));
+		
+		for(Module m : modules){
+			if(m.getKey() == key){
+				m.toggle();
+			}
+		}
+	}
 	
 	public static boolean isModuleEnabled(String name){
 		Module m = modules.stream().filter(mm->mm.getName().equalsIgnoreCase(name)).findFirst().orElse(null);

@@ -1,0 +1,21 @@
+package me.srgantmoomoo.lasventuras.client.ui.name;
+
+import java.util.ArrayList;
+
+import me.srgantmoomoo.lasventuras.client.module.Module;
+import me.srgantmoomoo.lasventuras.client.ui.name.names.*;
+
+public class NameManager {
+	public static ArrayList<Name> names;
+	
+	public NameManager() {
+		names = new ArrayList<>();
+		
+		this.names.add(new L());
+		
+	}
+	public ArrayList<Name> getNameList() {
+		return Name.names;
+	}
+
+}

@@ -56,7 +56,7 @@ ofCustomSky:true
 ofShowCapes:true
 ofNaturalTextures:false
 ofLazyChunkLoading:true
-ofDynamicFov:true
+ofDynamicFov:false
 ofAlternateBlocks:true
 ofDynamicLights:3
 ofScreenshotSize:1

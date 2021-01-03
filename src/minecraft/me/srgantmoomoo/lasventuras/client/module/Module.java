@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+import me.srgantmoomoo.lasventuras.api.event.customevent.Event;
 import me.srgantmoomoo.lasventuras.client.LasVenturas;
 import me.srgantmoomoo.lasventuras.client.setting.Setting;
 import me.srgantmoomoo.lasventuras.client.setting.settings.KeybindSetting;
@@ -35,13 +36,15 @@ public abstract class Module {
 	
 	//public void onWorldRender(RenderEvent event) {}
 	
-	public void onUpdate(){}
+	public void onUpdate() {}
 	
-	public void onRender(){}
+	public void onRender() {}
 	
-	protected void enable(){}
+	protected void enable() {}
 
-	protected void disable(){}
+	protected void disable() {}
+	
+	public void onEvent(Event e) {}
 	
 	public void addSettings(Setting... settings) {
 		this.settings.addAll(Arrays.asList(settings));

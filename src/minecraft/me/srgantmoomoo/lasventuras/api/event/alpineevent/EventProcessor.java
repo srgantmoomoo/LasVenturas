@@ -4,23 +4,18 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Map;
 
-import net.minecraftforge.client.event.*;
 import org.apache.commons.io.IOUtils;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
-import org.json.simple.parser.ParseException;
 import org.lwjgl.input.Mouse;
 
 import com.google.common.collect.Maps;
 import com.google.common.eventbus.Subscribe;
 
-import me.srgantmoomoo.lasventuras.api.event.events.PacketEvent;
-import me.srgantmoomoo.lasventuras.api.event.events.PlayerJoinEvent;
-import me.srgantmoomoo.lasventuras.api.event.events.PlayerLeaveEvent;
+import me.srgantmoomoo.lasventuras.api.event.alpineevent.events.PacketEvent;
+import me.srgantmoomoo.lasventuras.api.event.alpineevent.events.PlayerJoinEvent;
+import me.srgantmoomoo.lasventuras.api.event.alpineevent.events.PlayerLeaveEvent;
+import me.srgantmoomoo.lasventuras.api.event.customevent.listeners.TickEvent;
 import me.srgantmoomoo.lasventuras.client.LasVenturas;
 import me.srgantmoomoo.lasventuras.client.module.ModuleManager;
-import me.srgantmoomoo.lasventuras.client.module.modules.render.Freecam;
 import me.srgantmoomoo.external.me.zero.alpine.listener.EventHandler;
 import me.srgantmoomoo.external.me.zero.alpine.listener.Listener;
 import net.minecraft.client.Minecraft;
