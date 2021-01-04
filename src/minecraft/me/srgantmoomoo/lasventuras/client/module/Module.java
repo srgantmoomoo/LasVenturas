@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import me.srgantmoomoo.lasventuras.api.event.customevent.Event;
+import me.srgantmoomoo.lasventuras.api.event.customevent.listeners.EventKey;
 import me.srgantmoomoo.lasventuras.client.LasVenturas;
 import me.srgantmoomoo.lasventuras.client.setting.Setting;
 import me.srgantmoomoo.lasventuras.client.setting.settings.KeybindSetting;

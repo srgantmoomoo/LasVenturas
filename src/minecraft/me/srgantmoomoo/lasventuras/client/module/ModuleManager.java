@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.lwjgl.input.Keyboard;
+
 import me.srgantmoomoo.lasventuras.api.event.customevent.Event;
 import me.srgantmoomoo.lasventuras.api.event.customevent.listeners.EventKey;
+import me.srgantmoomoo.lasventuras.client.module.modules.movement.*;
 import net.minecraft.client.Minecraft;
 
 public class ModuleManager {
@@ -15,19 +18,13 @@ public class ModuleManager {
 	public ModuleManager() {
 		modules = new ArrayList<>();
 		
-		//exploits
-		//this.modules.add(new Dupe());
-
-		//render
-
-		//player
-
-		//pvp
-
-		//client
-
-		//hud
+		// Movement
+		addMod(new Sprint());
 		
+	}
+
+	public static void addMod(Module module) {
+		modules.add(module);
 	}
 	
 	public static void onUpdate() {
@@ -58,12 +55,22 @@ public class ModuleManager {
 	}*/
 	
 	public static void onEvent(Event e) {
-		for(Module m : modules){
-			if(!m.toggled)
-				continue;
-			
-			m.onEvent(e);;
-		}
+		if(Minecraft.getMinecraft().world == null || Minecraft.getMinecraft().player == null)
+			return;
+		try {
+			if(Keyboard.isCreated()) {
+				if(Keyboard.getEventKeyState()) {
+					int keyCode = Keyboard.getEventKey();
+					if(keyCode <= 0)
+						return;
+					for(Module m : ModuleManager.modules) {
+						if(m.getKey() == keyCode && keyCode > 0) {
+							m.toggle();
+						}
+					}
+				}
+			}
+		} catch (Exception q) { q.printStackTrace(); }
 	}
 	
 	public static void keyPress(int key) {

@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.lwjgl.opengl.Display;
 
 import me.srgantmoomoo.lasventuras.api.config.SaveLoad;
+import me.srgantmoomoo.lasventuras.api.event.customevent.listeners.EventKey;
+import me.srgantmoomoo.lasventuras.client.module.Module;
 import me.srgantmoomoo.lasventuras.client.module.ModuleManager;
 import me.srgantmoomoo.lasventuras.client.setting.SettingManager;
 import me.srgantmoomoo.lasventuras.client.ui.UIRenderer;

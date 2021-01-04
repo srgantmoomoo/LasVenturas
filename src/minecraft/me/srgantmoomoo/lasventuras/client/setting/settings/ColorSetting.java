@@ -1,4 +1,4 @@
-package me.srgantmoomoo.lasventuras.client.setting.settings;
+/*package me.srgantmoomoo.lasventuras.client.setting.settings;
 
 import java.awt.Color;
 
@@ -55,4 +55,4 @@ public class ColorSetting extends Setting implements me.srgantmoomoo.external.co
 	public void setRainbow(boolean rainbow) {
 		this.rainbow=rainbow;
 	}
-}
+}*/

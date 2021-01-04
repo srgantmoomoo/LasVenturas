@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;me.srgantmoomoo.lasventuras.api.utila&apos; to &apos;me.srgantmoomoo.lasventuras.api.utils&apos;&#x0D;&#x0A;- Original project: &apos;Client&apos;&#x0D;&#x0A;- Original element: &apos;Client/src/me.srgantmoomoo.lasventuras.api.utila&apos;&#x0D;&#x0A;- Renamed element: &apos;Client/src/me.srgantmoomoo.lasventuras.api.utils&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;me.srgantmoomoo.lasventuras.api.utila&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;me.srgantmoomoo.lasventuras.api.utila" name="me.srgantmoomoo.lasventuras.api.utils" qualified="false" references="true" stamp="1609657877938" textual="false" version="1.0"/>
+</session>

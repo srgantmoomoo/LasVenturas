@@ -15,7 +15,6 @@ import me.srgantmoomoo.lasventuras.client.module.Module;
 import me.srgantmoomoo.lasventuras.client.module.ModuleManager;
 import me.srgantmoomoo.lasventuras.client.setting.Setting;
 import me.srgantmoomoo.lasventuras.client.setting.settings.BooleanSetting;
-import me.srgantmoomoo.lasventuras.client.setting.settings.ColorSetting;
 import me.srgantmoomoo.lasventuras.client.setting.settings.ModeSetting;
 import me.srgantmoomoo.lasventuras.client.setting.settings.NumberSetting;
 import net.minecraft.client.Minecraft;
@@ -71,10 +70,10 @@ public class SaveLoad {
 				toSave.add("SET:" + mod.getName() + ":" + setting.name + ":" + mode.getMode());
 			}
 			
-			if(setting instanceof ColorSetting) {
-				ColorSetting color = (ColorSetting) setting;
-				toSave.add("SET:" + mod.getName() + ":" + setting.name + ":" + color.toInteger());
-			}
+			//if(setting instanceof ColorSetting) {
+				//ColorSetting color = (ColorSetting) setting;
+				//toSave.add("SET:" + mod.getName() + ":" + setting.name + ":" + color.toInteger());
+			//}
 			}
 		} 
 		
@@ -126,9 +125,9 @@ public class SaveLoad {
 						if(setting instanceof ModeSetting) {
 						((ModeSetting)setting).setMode(args[3]);
 					}
-						if(setting instanceof ColorSetting) {
-						((ColorSetting)setting).fromInteger(Integer.parseInt(args[3]));
-						}
+						//if(setting instanceof ColorSetting) {
+						//((ColorSetting)setting).fromInteger(Integer.parseInt(args[3]));
+						//}
 					}
 				}
 			}

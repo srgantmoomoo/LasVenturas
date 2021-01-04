@@ -1,0 +1,29 @@
+package me.srgantmoomoo.lasventuras.client.module.modules.movement;
+
+import org.lwjgl.input.Keyboard;
+
+import me.srgantmoomoo.lasventuras.client.module.Category;
+import me.srgantmoomoo.lasventuras.client.module.Module;
+import me.srgantmoomoo.lasventuras.client.setting.settings.ModeSetting;
+
+public class Sprint extends Module {
+	public ModeSetting mode = new ModeSetting("Mode", this, "Normal", "Normal", "Rage");
+	
+	public Sprint() {
+		super ("Sprint", "now u cant walk, good going", Keyboard.KEY_NONE, Category.MOVEMENT);
+		this.addSettings(mode);
+		toggled = ture;
+	}
+	
+	@Override
+	public void onUpdate() {
+			if(mode.getMode().equals("normal")) {
+			if(mc.player.movementInput.field_192832_b > 0 && !mc.player.isSneaking() && !mc.player.isCollidedHorizontally) {
+				mc.player.setSprinting(true);
+				}
+			}else if(mode.getMode().equals("sickomode")) {
+					mc.player.setSprinting(true);
+			
+		}
+	}
+}
