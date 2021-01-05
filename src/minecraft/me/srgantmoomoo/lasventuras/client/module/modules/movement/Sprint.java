@@ -14,7 +14,6 @@ public class Sprint extends Module {
 	public Sprint() {
 		super ("Sprint", "now u cant walk, good going", Keyboard.KEY_I, Category.MOVEMENT);
 		this.addSettings(mode);
-		toggled = true;
 	}
 	
 	public void onEnable() {
@@ -23,7 +22,7 @@ public class Sprint extends Module {
 	
 	public void onDisable() {
 		
-		mc.player.setSprinting(false);
+		//mc.player.setSprinting(false);
 	}
 	
 	public void onEvent(Event e){

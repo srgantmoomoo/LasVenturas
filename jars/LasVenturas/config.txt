@@ -1,2 +1,2 @@
-MOD:Sprint:false:23
+MOD:Sprint:true:23
 SET:Sprint:Mode:Normal
