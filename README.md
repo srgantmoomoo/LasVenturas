@@ -1,3 +1,4 @@
+used to be private to me, kfc, and piggy, now public. unfinished probably forever.
 # LasVenturas
 a private mcp client for minecraft 1.12.2 <br />
 src is in src/minecraft -> me/srgantmoomoo/LasVenturas
